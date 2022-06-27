@@ -70,12 +70,7 @@ body {
     /* border: 1px solid black; */
 }
 
-.yesNoBtn {
-    justify-content: center;
-    align-items: center;
-}
-
-.flexNoBtn {
+.flexNoBtn, .flexYesBtn {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -96,9 +91,9 @@ body {
     /* transform: translate(-50%, -50%); */
 }
 
-#textInNoBtn {
+/* #textInNoBtn {
     font-size: 1.2rem;
-}
+} */
 
 /* #noBtn, #yesBtn {
     border-radius: 100%;
