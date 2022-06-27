@@ -158,6 +158,17 @@ body {
 #picInHomeBtn {
     padding-top: 8px;
     position: relative;
+    /* display: inline-block; */
+    /* width: 100%; */
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.thisPic {
+    display: inline-block;
+	/* position: absolute; */
+	top: 0;
+	left: 0;
 }
 
 #textInHomeBtn {
