@@ -184,12 +184,12 @@ body {
         height: 100vw;
     }
 
-    .left {
+    /* .left {
         margin-left: 30px;
-    }
+    } */
 
     .right {
-        margin-right: 60px;
+        margin-right: 70px;
     }
 
     #noBtn, #yesBtn {
