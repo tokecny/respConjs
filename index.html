@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Conjs</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="wholePage">
@@ -110,7 +111,56 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        let canvasId = $('.objects');
+        let curCanvasId = canvasId.attr('id');
 
+        function CreateNumberId(start, stop) {
+            let resultArr = []
+            for (i = start; i <= stop; i++) {
+                resultArr.push('object' + i)
+            }
+            return resultArr
+        }
 
+        let numberId = CreateNumberId(1, 48);
+        // for shuffle anything in an array 
+        const shuffledArray = numberId.sort((a, b) => 0.5 - Math.random());
+        let shapeId = [];
+        let colorId = [];
+        let positionId = [];
+
+            for (let i = 0; i < 3; i++) {
+                let randId = document.querySelector('#' + shuffledArray[i]);
+
+                const thisShape = Math.floor(Math.random() * 2) + 1;
+                shapeId.push(thisShape);
+                    if (shapeId[i] === 1) {
+                        this.$(randId).addClass('square');
+                    } else {
+                        this.$(randId).addClass('circle');
+                    }
+
+                const thisColor = Math.floor(Math.random() * 2) + 1;
+                colorId.push(thisColor);
+                    if (colorId[i] === 1) {
+                        this.$(randId).addClass('blue');
+                    } else {
+                        this.$(randId).addClass('yellow');
+                    }
+            
+                const thisPosition = Math.floor(Math.random() * 4) + 1;
+                positionId.push(thisPosition);
+                    if (positionId[i] === 1) {
+                        this.$(randId).addClass('top-left');
+                    } else if (positionId[i] === 2) {
+                        this.$(randId).addClass('top-right ');
+                    } else if (positionId[i] === 3) {
+                        this.$(randId).addClass('down-left');
+                    } else {
+                        this.$(randId).addClass('down-right');
+                    }
+            }
+    </script>
 </body>
 </html>

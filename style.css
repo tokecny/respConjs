@@ -82,6 +82,9 @@ body {
 
 .canvas {
     width: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border: 1px solid black; */
 }
 
@@ -209,4 +212,45 @@ body {
         width: 4vh;
         height: 4vh;
     }
+}
+
+.objects {
+    opacity: 0;
+    width: 4vh;
+    height: 4vh;
+    border: #000000;
+    background-color: aliceblue;
+}
+
+.square {
+    opacity: 1;
+}
+
+.circle {
+    opacity: 1;
+    border-radius: 100%;
+}
+
+.blue {
+    background-color: #0072ff;
+}
+
+.yellow {
+    background-color: #ffc837;
+}
+
+.top-left {
+    margin: 0 1em 0.5em 0;
+}
+
+.top-right {
+    margin: 0 0 0.5em 1em;
+}
+
+.down-left {
+    margin: 0.7em 0.5em 0 0;
+}
+
+.down-right {
+    margin: 0.7em 0 0 1em;
 }
